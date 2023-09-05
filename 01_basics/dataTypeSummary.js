@@ -39,7 +39,43 @@ let myFunction = function () {
 
 // myFunction();
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 // ECMA Script Standard
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// **************** Memmory in JS *******************
+
+// 2 type of Memmory in JS
+
+// 1. Stack Memmory
+// --> used in Primitive Type Datatype
+// --> variable ka copy milta hai
+
+let name = "Rohit";
+let broName = name;
+
+broName = "Ajay";
+
+// console.log(name, broName);
+
+// Note - it does not change the original value of the variable
+
+// 2. Heap Memmory
+// --> used in non-primitive type dataTypes
+// --> variable ka reference milta hai
+
+let user = {
+  name: "Rohit",
+  age: 26,
+  isLoggedIn: true,
+};
+
+let anotherUser = user;
+
+anotherUser.name = "Ajay";
+
+console.log(user, anotherUser);
+
+// Note: - It provide the access through the reference that's why values get
+//         changed in the original variable as well
