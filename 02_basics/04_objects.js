@@ -62,10 +62,41 @@ const users = [
 
 // to get all the keys
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 // 1st value -- key   2nd value -- value
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+// ************************* Object Destructuring ****************
+
+const course = {
+  courseName: "JS in Hindi",
+  price: 999,
+  courseInstructor: "Hitesh",
+};
+
+// console.log(course.courseName);
+
+const { courseInstructor: instructor } = course;
+
+// console.log(instructor);
+
+// *************************** APIs *************************************
+
+// JSON
+
+// Type 1:
+
+// {
+//   "courseName": "JS in Hindi",
+//   "price": "free",
+//   "courseInstructor": "Hitesh",
+// }
+
+// Type 2:
+[{}, {}, {}];
+
+// Use the JSON formatter tree option to understand the API results better
